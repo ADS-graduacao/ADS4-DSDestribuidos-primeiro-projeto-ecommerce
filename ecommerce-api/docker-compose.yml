@@ -1,0 +1,8 @@
+services:
+  meu-banco:
+    image: postgres:latest
+    container_name: banco_ecommerce
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_PASSWORD: postgres
