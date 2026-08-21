@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.sql.Timestamp;
+import java.time.LocalDateTime;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -23,7 +24,7 @@ public class UserModel {
     private String endereco;
     private String email;
     private String telefone;
-    private Timestamp data_cadastro;
+    private LocalDateTime data_cadastro;
 
     public static UserModel convert(UserDto userDto){
         UserModel user = new UserModel();
