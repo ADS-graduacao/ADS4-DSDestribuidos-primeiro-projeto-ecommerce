@@ -3,15 +3,14 @@
   <component name="CompilerConfiguration">
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
-      <profile name="Annotation profile for ecommerce-api" enabled="true">
+      <profile name="Annotation profile for shopping-api" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
         </processorPath>
-        <module name="ecommerce-api" />
+        <module name="shopping-api" />
       </profile>
       <profile name="Annotation profile for product-api" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -19,8 +18,10 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
         </processorPath>
         <module name="product-api" />
+        <module name="ecommerce-api" />
       </profile>
     </annotationProcessing>
   </component>
@@ -28,6 +29,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="ecommerce-api" options="-parameters" />
       <module name="product-api" options="-parameters" />
+      <module name="shopping-api" options="-parameters" />
     </option>
   </component>
 </project>
